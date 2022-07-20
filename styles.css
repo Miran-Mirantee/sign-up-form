@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    margin: 0;
+}
+
+.left-panel {
+    display: flex;
+    width: 40%;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    width: 60%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+form > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+label {
+}
+
+.background {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 72px;
+}
