@@ -19,6 +19,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin: 16px 0;
 }
 
 form > div > div {
@@ -30,9 +31,6 @@ input {
     box-sizing: border-box;
 }
 
-label {
-}
-
 .background {
     width: 100%;
 }
@@ -40,4 +38,13 @@ label {
 .row {
     display: flex;
     gap: 72px;
+}
+
+button {
+    width: 150px;
+    padding: 8px;
+}
+
+.form-text {
+    font-size: 24px;
 }
