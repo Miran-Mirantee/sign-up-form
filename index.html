@@ -31,21 +31,21 @@
             <div class="row">
                 <div>
                     <label for="fName">FIRST NAME</label>
-                    <input type="text" name="fName" id="fName">
+                    <input type="text" name="fName" id="fName" pattern="\D+">
                 </div>
                 <div>
                     <label for="lName">LAST NAME</label>
-                    <input type="text" name="lName" id="lName">
+                    <input type="text" name="lName" id="lName" pattern="\D+">
                 </div>
             </div>
             <div class="row">
                 <div>
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email">    
                 </div>
                 <div>
                     <label for="tel">PHONE NUMBER</label>
-                    <input type="tel" name="tel" id="tel">
+                    <input type="tel" name="tel" id="tel" pattern="[0-9]{10}|[0-9]{3}(-|\s)[0-9]{3}\1[0-9]{4}">
                 </div>
             </div>
             <div class="row">
