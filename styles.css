@@ -6,6 +6,7 @@
 body {
     display: flex;
     margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .left-panel {
@@ -46,11 +47,17 @@ input {
     height: 36px;
     width: 300px;
     border-radius: 8px;
-    border: 1px solid gray;
+    border: 1px solid #E5E7EB;
 }
 
 input:invalid {
     border-color: red;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(86, 178, 253);
+    box-shadow: 2px 2px 4px rgb(68, 67, 67);
 }
 
 .background {
@@ -96,6 +103,9 @@ input:invalid {
 button {
     width: 150px;
     padding: 8px;
+    background-color: greenyellow;
+    border-radius: 8px;
+    border-style: none;
 }
 
 .form-text {
