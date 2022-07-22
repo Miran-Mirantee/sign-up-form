@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("Norse-Bold.otf");
+}
+
 body {
     display: flex;
     margin: 0;
@@ -6,20 +11,28 @@ body {
 .left-panel {
     display: flex;
     width: 40%;
+    height: 100vh;
 }
 
 .right-panel {
     display: flex;
     flex-direction: column;
-    padding: 48px;
+    justify-content: center;
     width: 60%;
+}
+
+.right-panel > div {
+    font-size: 24px;
+    padding: 0px 36px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin: 16px 0;
+    margin: 16px 0px;
+    padding: 36px 48px;
+    background-color: lightgrey;
 }
 
 form > div > div {
@@ -29,10 +42,50 @@ form > div > div {
 
 input {
     box-sizing: border-box;
+    font-size: 18px;
+    height: 36px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+input:invalid {
+    border-color: red;
 }
 
 .background {
     width: 100%;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25vh;
+    height: 150px;
+}
+
+.logo > img {
+    z-index: 1;
+    height: 130px;
+}
+
+.logo-text {
+    z-index: 1;
+    font-size: 100px;
+    color: white;
+    font-family: "Norse-Bold", Arial, Helvetica, sans-serif;
+}
+
+.logo-bg {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    background-color: black;
+    opacity: 50%;
 }
 
 .row {
@@ -47,4 +100,12 @@ button {
 
 .form-text {
     font-size: 24px;
+}
+
+.top {
+    margin-bottom: 48px;
+}
+
+.bottom {
+    
 }
