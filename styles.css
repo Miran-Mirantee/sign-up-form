@@ -30,7 +30,7 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 28px;
     margin: 16px 0px;
     padding: 36px 48px;
     background-color: lightgrey;
@@ -52,6 +52,42 @@ input {
 
 input:invalid {
     border-color: red;
+}
+
+input + span {
+    position: relative;
+}
+
+input[type="text"]:invalid + span::after {
+    position: absolute;
+    left: 5px;
+    content: "* Only alphabet characters are allowed";
+    color: red;
+    font-size: 12px;
+}
+
+input[type="tel"]:invalid + span::after {
+    position: absolute;
+    left: 5px;
+    content: "* Only numbers are allowed";
+    color: red;
+    font-size: 12px;
+}
+
+input[type="email"]:invalid + span::after {
+    position: absolute;
+    left: 5px;
+    content: "* Invalid email format";
+    color: red;
+    font-size: 12px;
+}
+
+input[id="confirm-pWord"]:invalid + span::after {
+    position: absolute;
+    left: 5px;
+    content: "* Password do not match";
+    color: red;
+    font-size: 12px;
 }
 
 input:focus {
