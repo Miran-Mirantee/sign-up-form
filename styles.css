@@ -57,7 +57,7 @@ input:invalid {
 input:focus {
     outline: none;
     border: 1px solid rgb(86, 178, 253);
-    box-shadow: 2px 2px 4px rgb(68, 67, 67);
+    box-shadow: 1px 1px 4px rgb(68, 67, 67);
 }
 
 .background {
@@ -101,8 +101,8 @@ input:focus {
 }
 
 button {
-    width: 150px;
-    padding: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
     background-color: greenyellow;
     border-radius: 8px;
     border-style: none;
