@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="left-panel">
@@ -26,7 +27,7 @@
             It has survived not only five centuries, 
             but also the leap into electronic typesetting, remaining essentially unchanged. 
         </div>
-        <form action="#" method="get" id="sign-up">
+        <form action="#" method="get" id="sign-up" onsubmit="submitEvent(event);">
             <div class="form-text">This is a sign-up form</div>
             <div class="row">
                 <div>
@@ -66,7 +67,7 @@
             </div>
         </form>
         <div class="bottom">
-            <button type="submit" form="sign-up">Create Account</button>
+            <button type="submit" form="sign-up" class="submit-btn">Create Account</button>
         </div>
     </div>
 </body>
