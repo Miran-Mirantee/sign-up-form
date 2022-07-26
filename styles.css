@@ -33,7 +33,8 @@ form {
     gap: 28px;
     margin: 16px 0px;
     padding: 36px 48px;
-    background-color: lightgrey;
+    background-color: #dae3d3;
+    box-shadow: 1px 3px 5px #b1aaaa;
 }
 
 form > div > div {
@@ -47,7 +48,7 @@ input {
     height: 36px;
     width: 300px;
     border-radius: 8px;
-    border: 1px solid #E5E7EB;
+    border: 2px solid #E5E7EB;
 }
 
 input:invalid {
@@ -100,6 +101,15 @@ input:focus {
     width: 100%;
     background-image: url("bg.jpg");
     background-size: cover;
+    position: relative;
+}
+
+.background > div + div{
+    position: absolute;
+    color: white;
+    bottom: 1vh;
+    right: 50%;
+    transform: translate(50%);
 }
 
 .logo {
@@ -137,16 +147,17 @@ input:focus {
 }
 
 button {
-    position: absolute;
+    margin-top: 8px;
     padding: 12px 24px;
     font-size: 16px;
-    background-color: greenyellow;
+    background-color: #596D48;
+    color: white;
     border-radius: 8px;
-    border-style: none;
+    border: 2px solid transparent;
 }
 
 button:active {
-    border: 2px solid darkgreen;
+    background-color: green;
 }
 
 .form-text {
@@ -158,4 +169,8 @@ button:active {
 }
 
 .bottom {
+}
+
+a, a:visited {
+    color: white;
 }
