@@ -9,36 +9,41 @@
 body {
     display: flex;
     margin: 0;
+    padding: 0;
+    height: 100vh;
     font-family:'CyberpunkWaifus', 'Arial Narrow', Arial, sans-serif;
+    color: white;
     font-size: 18px;
+    gap: 14px;
+    background-color: #1f1a2e;
 }
 
 .left-panel {
     display: flex;
     width: 30%;
-    height: 100vh;
 }
 
 .right-panel {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 14px;
     width: 70%;
-}
-
-.right-panel > div {
-    padding: 0px 36px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 28px;
-    margin: 16px 0px;
     padding: 36px 48px;
+    color: inherit;
+    height: 60vh;
     background-color: #1f1a2e;
-    color: white;
-    box-shadow: 1px 3px 5px #b1aaaa;
+    box-shadow: 
+        0px 0px 0px 2px #1f1a2e,
+        0px 0px 0px 4px #151024,
+        0px 0px 0px 10px #1f1a2e,
+        0px 0px 0px 12px #2a2637;
+    
 }
 
 form > div > div {
@@ -52,7 +57,7 @@ input {
     font-size: 24px;
     font-family: inherit;
     background-color: black;
-    color: white;
+    color: inherit;
     height: 36px;
     width: 360px;
     border: 2px solid transparent;
@@ -105,16 +110,15 @@ input[id="confirm-pWord"]:invalid + span::after {
 
 input:focus {
     outline: none;
-    border: 1px solid rgb(86, 178, 253);
-    box-shadow: 1px 1px 4px rgb(68, 67, 67);
+    border: 2px solid rgb(86, 178, 253);
 }
 
 .background {
-    width: 100%;
     background-image: url("image/jill_bg.jpeg");
-    background-size: 100%;
-    background-position: 0px 0px;
-    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
 }
 
 .background > div + div{
@@ -163,29 +167,57 @@ input:focus {
 button {
     margin-top: 8px;
     padding: 12px 24px;
+    width: 250px;
     font-size: 20px;
-    background-color: #596D48;
+    /* background-image: linear-gradient(to bottom,  #313f6b, #317da1, #313f6b); */
+    background-color: #f50056;
+    box-shadow: 
+        0px 0px 0px 2px #00699b,
+        0px 6px 0px 3px #003147,
+        0px 10px 3px 4px #151024,
+        inset -3px 3px 0px 3px black,
+        inset 0px 48px 0px 0px #313f6b,
+        inset -2px 49px 0px 2px black;
     font-family:'CyberpunkWaifus', 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;
-    color: white;
-    border-radius: 8px;
-    border: 2px solid transparent;
+    color: inherit;
+    border: none;
 }
 
 button:active {
-    background-color: green;
+    background-color: #00f54a;
+    transform: translateY(6px);
+    box-shadow: 
+    0px 0px 0px 2px #00699b,
+    inset -3px 3px 0px 3px black,
+    inset 0px 48px 0px 0px #313f6b,
+    inset -2px 49px 0px 2px black;
 }
 
 .form-text {
     font-size: 24px;
 }
 
-.top {
-    margin-bottom: 48px;
-    font-size: 30px;
+.top-bg {
+    height: 40vh;
+    background-image: url("image/glitchCity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    display: flex;
+    align-items: center;
+    box-shadow: 
+        0px 0px 0px 2px #1f1a2e,
+        0px 0px 0px 4px #151024,
+        0px 0px 0px 10px #1f1a2e,
+        0px 0px 0px 12px #2a2637;
 }
 
-.bottom {
+.top {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 36px;
 }
 
 a, a:visited {
