@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Norse-Bold";
-    src: url("Norse-Bold.otf");
+    src: url("fonts/Norse-Bold.otf");
 
     font-family: "CyberpunkWaifus";
-    src: url("CyberpunkWaifus.ttf");
+    src: url("fonts/CyberpunkWaifus.ttf");
 }
 
 body {
@@ -111,7 +111,7 @@ input:focus {
 
 .background {
     width: 100%;
-    background-image: url("jill_bg.jpeg");
+    background-image: url("image/jill_bg.jpeg");
     background-size: 100%;
     background-position: 0px 0px;
     position: relative;
