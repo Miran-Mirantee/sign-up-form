@@ -22,13 +22,6 @@
     </div>
     <div class="right-panel">
         <div class="top-bg">
-            <!-- <div class="top">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries,
-                but also the leap into electronic typesetting, remaining essentially unchanged.
-            </div> -->
             <div class="top">
                 On a small road just seconds away from the main street, somewhere near the slums, 
                 you can find the Hall A of the BTC-certified bar coded VA-11...<br><br>
@@ -37,46 +30,59 @@
                 And it's here where this story unfolds.
             </div>
         </div>
-        <form action="#" method="get" id="sign-up" onsubmit="submitEvent(event);">
-            <div class="form-text">Time to mix drinks and change lives!</div>
-            <div class="row">
-                <div>
-                    <label for="fName">FIRST NAME</label>
-                    <input type="text" name="fName" id="fName" pattern="\D+">
-                    <span></span>
+        <div class="bottom">
+            <form action="#" method="get" id="sign-up" onsubmit="submitEvent(event);">
+                <div class="form-text">Time to mix drinks and change lives!</div>
+                <div class="row">
+                    <div>
+                        <label for="fName">FIRST NAME</label>
+                        <input type="text" name="fName" id="fName" pattern="\D+">
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="lName">LAST NAME</label>
+                        <input type="text" name="lName" id="lName" pattern="\D+">
+                        <span></span>
+                    </div>
                 </div>
-                <div>
-                    <label for="lName">LAST NAME</label>
-                    <input type="text" name="lName" id="lName" pattern="\D+">
-                    <span></span>
+                <div class="row">
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" name="tel" id="tel" pattern="[0-9]{10}|[0-9]{3}(-|\s)[0-9]{3}\1[0-9]{4}">
+                        <span></span>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                    <span></span>
+                <div class="row">
+                    <div>
+                        <label for="pWord">PASSWORD</label>
+                        <input type="password" name="password" id="pWord" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="confirm-pWord">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-pWord" required>
+                        <span></span>
+                    </div>
                 </div>
-                <div>
-                    <label for="tel">PHONE NUMBER</label>
-                    <input type="tel" name="tel" id="tel" pattern="[0-9]{10}|[0-9]{3}(-|\s)[0-9]{3}\1[0-9]{4}">
-                    <span></span>
+                <div class="btn-row">
+                    <button type="submit" form="sign-up" class="submit-btn">Sign up NOW! and get a Free Drink!</button>
+                    <a href="https://store.steampowered.com/app/447530/VA11_HallA_Cyberpunk_Bartender_Action/" target="_blank">
+                        <button type="button">Get VA-11 Hall-A on Steam NOW!</button>
+                    </a>
+                    <a href="https://store.steampowered.com/app/914210/N1RV_AnnA_Cyberpunk_Bartender_Action/" target="_blank">
+                        <button type="button">Add N1RV Ann-A to your Wishlist NOW!</button>
+                    </a>
                 </div>
-            </div>
-            <div class="row">
-                <div>
-                    <label for="pWord">PASSWORD</label>
-                    <input type="password" name="password" id="pWord" required>
-                    <span></span>
-                </div>
-                <div>
-                    <label for="confirm-pWord">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="confirm-pWord" required>
-                    <span></span>
-                </div>
-            </div>
-            <button type="submit" form="sign-up" class="submit-btn">Sign up NOW! and get a free drink!</button>
-        </form>
+            </form>
+            <video autoplay loop class="portrait">
+                <source src="dorothy.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
 </body>
 </html>
